@@ -1,0 +1,134 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  overflow-x: hidden;
+  font-family: "Amiri", serif;
+}
+
+body {
+  background-color: rgb(8, 8, 8);
+}
+
+.banner-first-impression {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  color: rgb(255, 249, 249);
+  gap: 10%;
+}
+
+.first-impression-background-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* .banner-logo-container {
+    position: absolute;
+    padding: 2rem;
+    margin: 1rem;
+    width: 100vw;
+    height: fit-content;
+    top: 25%;
+    left: 25%;
+
+  } */
+
+.berserk-logo {
+  position: absolute;
+  top: 25%;
+  left: 18%;
+  max-width: 60vw;
+}
+
+.banner-title {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  margin-right: 20%;
+  text-align: center;
+}
+
+.facts-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+  width: 100vw;
+}
+
+.facts-image {
+  max-width: 400px;
+  max-height: fit-content;
+}
+
+.facts-image img {
+  width: 100%;
+  border-radius: 25px;
+}
+
+.fact-box {
+  background-color: rgb(8, 8, 8);
+  border: 0.25rem solid #ca2726;
+  color: rgb(255, 249, 249);
+  padding: 1rem;
+  border-radius: 25px;
+}
+
+.stack-fact-boxes {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 2rem;
+}
+
+.facts-1 {
+  order: -1;
+}
+
+.footer-text {
+  color: rgb(255, 249, 249);
+  text-align: center;
+}
+
+/* TABLET SIZE */
+@media screen and (min-width: 700px) {
+  .berserk-logo {
+    position: absolute;
+    top: 10%;
+  }
+
+  .banner-title {
+    left: 38%;
+    top: 60%;
+    margin-right: 35%;
+  }
+}
+
+/* DESKTOP SIZE */
+@media screen and (min-width: 1323px) {
+  .berserk-logo {
+    position: absolute;
+    top: 10%;
+  }
+
+  .banner-title {
+    left: 38.5%;
+    top: 80%;
+    margin-right: 35%;
+  }
+
+  .facts-1 {
+    order: 0;
+  }
+
+  .stack-fact-boxes {
+    flex-direction: row;
+  }
+}
